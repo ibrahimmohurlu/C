@@ -7,7 +7,7 @@ int convNum[];
 int main(void) {
 	int sayi,taban,bolum,tempSayi;
 	int *ptrtempSayi=&tempSayi;
-	printf("Sayiyi giriniz. ->");scanf("%d",&sayi);
+	printf("Sayiyi giriniz. ->");scanf("%d",&sayi); //sayi onluk tabanda girilmelidir.
 	printf("Donusturmek istediginiz sayi tabanini giriniz. ->");scanf("%d",&taban);
 	tempSayi=sayi;
 	for(i=0;i<100;i++){
