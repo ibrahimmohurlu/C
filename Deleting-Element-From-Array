@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+int i,j,k;
+int array[];
+
+
+int main(void) {
+	int size,num,pos;
+	
+	printf("Enter the size of array ->");scanf("%d",&size);
+	
+	for(i=0; i<size; i++){
+		printf("Enter the %dth element ->",i+1);scanf("%d",&array[i]);
+	}
+	
+	printf("Enter a number ->");scanf("%d",&num);
+	
+	for(j=0; j<size; j++){
+		if(num == array[j]){
+		 pos=j;
+		}
+	}
+	
+	for(k=pos; k<size-1; k++){
+		array[k] = array[k+1];
+	}
+	
+	printf("The new matrix:\n");
+	for(i=0; i<size-1; i++){
+		printf("%d  ",array[i]);
+	}
+	
+	
+	getch();
+	return 0;
+}
