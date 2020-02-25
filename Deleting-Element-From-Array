@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int i,j,k;
-int array[];
+int *array;
 
 
 int main(void) {
@@ -9,6 +9,7 @@ int main(void) {
 	
 	printf("Enter the size of array ->");scanf("%d",&size);
 	
+	array = (int)malloc(sizeof(int)*size);
 	for(i=0; i<size; i++){
 		printf("Enter the %dth element ->",i+1);scanf("%d",&array[i]);
 	}
